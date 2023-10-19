@@ -2,13 +2,14 @@
 (IMPORTANT: Only replace the above numbers with your true UID, do not modify spacing and newlines, otherwise your tarfile might not be created correctly)
 
 ## You Spin Me Round Robin
-This is a simulation for round robin scheduling given a workload and quantum length from a txt file. It returns the average wait time and response time for processes to assess the effectiveness of the scheduling algorithm. Wait time is defined by ... while response time is.... Round Robin scheduler optimizes these wait and response times by giving each process the CPU for a quanta of time before switching off with the next process. This is implemented using a queue and new processes are added to the back of the queue. 
+This is a simulation for round robin scheduling given a workload and quantum length from a txt file. It uses the metrics of average wait time and response time for processes to assess the effectiveness of the scheduling algorithm. Wait time is defined by the time
+a process waits between its arrival in the queue to when it is fully executed. Response time is defined by the duration between arriving in the queue to when it gets the CPU for the first time. Round Robin scheduler optimizes these wait and response times by giving each process the CPU for a quanta of time before switching off with the next process. This is implemented using a queue and new processes are added to the back of the queue. 
 
 ## Building
 
 Explain briefly how to build your program
 
-Run the command ```"make"```
+Run the command ```make```
 
 ## Running
 
@@ -23,4 +24,4 @@ You should expect two lines: 1 line for average wait time and 1 line for average
 ## Cleaning up
 
 Explain briefly how to clean up all binary files
-Run the command "make clean"
+Run the command ```make clean```
